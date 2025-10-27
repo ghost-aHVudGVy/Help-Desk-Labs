@@ -20,7 +20,11 @@ Help-Desk-Labs/
 │   ├── README.md
 │   ├── screenshots/
 │
-├── Ticketing-System-Lab/
+├── Networking-and-Troubleshooting-Lab/
+│   ├── README.md
+│   ├── screenshots/
+│
+├── Printer-and-User-Support-Lab/
 │   ├── README.md
 │   ├── screenshots/
 │
@@ -28,15 +32,10 @@ Help-Desk-Labs/
 │   ├── README.md
 │   ├── screenshots/
 │
-├── Networking-and-Troubleshooting-Lab/
-│   ├── README.md
-│   ├── screenshots/
-│
-└── Printer-and-User-Support-Lab/
+└── Ticketing-System-Lab/
     ├── README.md
     ├── screenshots/
 ```
-
 Each lab includes:
 - A short description of the scenario  
 - Tools and technologies used  
