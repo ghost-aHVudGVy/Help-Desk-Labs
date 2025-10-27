@@ -4,7 +4,8 @@
 ---
 
 ## About This Repository  
-This repository contains a collection of hands-on **Help Desk and IT Support labs** designed to demonstrate real-world technical skills and problem-solving ability.  
+This repository contains a collection of hands-on **Help Desk and IT Support labs** designed to demonstrate real-world technical skills and problem-solving ability.
+
 Each lab simulates common issues faced in a professional IT environment — from Active Directory and user management to remote support and network troubleshooting.
 
 The goal is simple: to showcase the technical and communication skills that make an effective IT Support professional.
