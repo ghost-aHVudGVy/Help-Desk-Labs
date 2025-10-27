@@ -12,6 +12,18 @@ The goal is simple: to showcase the technical and communication skills that make
 
 ---
 
+## Lab Highlights  
+
+| Lab | Focus Area | Key Skills |
+|-----|-------------|------------|
+| [**Active Directory Lab**](./Active-Directory-Lab/README.md) | User management, Group Policies | Account setup, permissions, GPO configuration |
+| [**Ticketing System Lab**](./Ticketing-System-Lab/README.md) | IT workflow simulation | Documentation, ticket handling, escalation |
+| [**Remote Support Lab**](./Remote-Support-Lab/README.md) | Troubleshooting in real-time | Communication, diagnostics, remote tools |
+| [**Networking & Troubleshooting Lab**](./Networking-and-Troubleshooting-Lab/README.md) | Network connectivity issues | TCP/IP, DNS, DHCP, ping/tracert |
+| [**Printer & User Support Lab**](./Printer-and-User-Support-Lab/README.md) | Common Help Desk issues | Hardware setup, permissions, drivers |
+
+---
+
 ## Repository Structure
 ```
 Help-Desk-Labs/
@@ -41,18 +53,6 @@ Each lab includes:
 - Tools and technologies used  
 - Step-by-step documentation with screenshots  
 - Summary of findings and key takeaways  
-
----
-
-## Lab Highlights  
-
-| Lab | Focus Area | Key Skills |
-|-----|-------------|------------|
-| [**Active Directory Lab**](./Active-Directory-Lab/README.md) | User management, Group Policies | Account setup, permissions, GPO configuration |
-| [**Ticketing System Lab**](./Ticketing-System-Lab/README.md) | IT workflow simulation | Documentation, ticket handling, escalation |
-| [**Remote Support Lab**](./Remote-Support-Lab/README.md) | Troubleshooting in real-time | Communication, diagnostics, remote tools |
-| [**Networking & Troubleshooting Lab**](./Networking-and-Troubleshooting-Lab/README.md) | Network connectivity issues | TCP/IP, DNS, DHCP, ping/tracert |
-| [**Printer & User Support Lab**](./Printer-and-User-Support-Lab/README.md) | Common Help Desk issues | Hardware setup, permissions, drivers |
 
 ---
 
