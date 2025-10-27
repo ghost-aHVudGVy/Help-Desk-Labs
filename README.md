@@ -48,11 +48,11 @@ Each lab includes:
 
 | Lab | Focus Area | Key Skills |
 |-----|-------------|------------|
-| **Active Directory Lab** | User management, Group Policies | Account setup, permissions, GPO configuration |
-| **Ticketing System Lab** | IT workflow simulation | Documentation, ticket handling, escalation |
-| **Remote Support Lab** | Troubleshooting in real-time | Communication, diagnostics, remote tools |
-| **Networking & Troubleshooting Lab** | Network connectivity issues | TCP/IP, DNS, DHCP, ping/tracert |
-| **Printer & User Support Lab** | Common Help Desk issues | Hardware setup, permissions, drivers |
+| [**Active Directory Lab**](./Active-Directory-Lab/README.md) | User management, Group Policies | Account setup, permissions, GPO configuration |
+| [**Ticketing System Lab**](./Ticketing-System-Lab/README.md) | IT workflow simulation | Documentation, ticket handling, escalation |
+| [**Remote Support Lab**](./Remote-Support-Lab/README.md) | Troubleshooting in real-time | Communication, diagnostics, remote tools |
+| [**Networking & Troubleshooting Lab**](./Networking-and-Troubleshooting-Lab/README.md) | Network connectivity issues | TCP/IP, DNS, DHCP, ping/tracert |
+| [**Printer & User Support Lab**](./Printer-and-User-Support-Lab/README.md) | Common Help Desk issues | Hardware setup, permissions, drivers |
 
 ---
 
@@ -69,11 +69,6 @@ Each lab includes:
 ## Certifications  
 - CompTIA A+  
 - CompTIA Security+  
-
----
-
-## Purpose  
-These labs were created to demonstrate practical IT Support skills beyond certification.  
 
 ---
 
