@@ -12,7 +12,8 @@ The goal is simple: to showcase the technical and communication skills that make
 
 ---
 
-## Repository Structure  
+## Repository Structure
+```
 Help-Desk-Labs/
 │
 ├── Active-Directory-Lab/
@@ -34,6 +35,7 @@ Help-Desk-Labs/
 └── Printer-and-User-Support-Lab/
     ├── README.md
     ├── screenshots/
+```
 
 Each lab includes:
 - A short description of the scenario  
