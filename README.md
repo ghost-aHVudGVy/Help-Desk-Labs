@@ -6,11 +6,12 @@
 ---
 
 ## About This Repository  
-This repository contains a series of **hands-on labs** that demonstrate real-world IT Support and Help Desk skills.  
 
-Each project recreates scenarios that an IT professional might face in a production environment, including user account management, Active Directory administration, network troubleshooting, and ticket-based problem resolution.  
+This repository is a collection of hands-on labs I’ve built to strengthen and demonstrate my Help Desk and IT Support skills.  
 
-The purpose of these labs is to show a practical, organized approach to diagnosing and solving technical issues, while maintaining a strong focus on communication, documentation, and user experience.
+Each lab walks through real scenarios I’d face in a support role — setting up and managing Active Directory, troubleshooting network issues, configuring printers, handling tickets, and more.  
+
+My goal with this labs is to simulate what it’s like to work in a real IT environment while documenting every step of the process clearly and professionally. It’s a way for me to keep learning and show my practical experience in IT support.
 
 ---
 
