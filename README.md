@@ -9,7 +9,7 @@
 
 This repository is a collection of hands-on labs I’ve built to strengthen and demonstrate my Help Desk and IT Support skills.  
 
-Each lab walks through real scenarios I’d face in a support role — setting up and managing Active Directory, troubleshooting network issues, configuring printers, handling tickets, and more.  
+Each lab walks through real scenarios I’d face in a support role - setting up and managing Active Directory, troubleshooting network issues, configuring printers, handling tickets, and more.  
 
 My goal with this labs is to simulate what it’s like to work in a real IT environment while documenting every step of the process clearly and professionally. It’s a way for me to keep learning and show my practical experience in IT support.
 
