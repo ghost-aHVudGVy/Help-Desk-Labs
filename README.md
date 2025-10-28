@@ -1,6 +1,8 @@
 # Help Desk Labs  
 **Practical IT Support & Troubleshooting Portfolio**
 
+**Disclaimer:** All labs are performed in a **controlled, educational environment**. No unauthorized systems or networks are accessed. The purpose of this repository is to demonstrate ethical, professional IT skills only.
+
 ---
 
 ## About This Repository  
@@ -81,13 +83,6 @@ Help-Desk-Labs/
 ## Certifications  
 - CompTIA A+  
 - CompTIA Security+  
-
----
-
-## Disclaimer  
-All labs are performed in a **controlled, educational environment**.  
-No unauthorized systems or networks are accessed.  
-The purpose of this repository is to demonstrate ethical, professional IT skills only.
 
 ---
 
