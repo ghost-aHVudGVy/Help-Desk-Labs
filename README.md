@@ -88,8 +88,8 @@ Help-Desk-Labs/
 ---
 
 ## Connect  
-- **LinkedIn:** [www.linkedin.com/in/name](https://www.linkedin.com/in/name)  
-- **GitHub Profile:** [github.com/ghost-aHVudGVy](https://github.com/ghost-aHVudGVy)
+- **LinkedIn:** [www.linkedin.com/in/antonio-karadenizov](www.linkedin.com/in/antonio-karadenizov)  
+- **GitHub:** [github.com/ghost-aHVudGVy](https://github.com/ghost-aHVudGVy)
 
 ---
 
