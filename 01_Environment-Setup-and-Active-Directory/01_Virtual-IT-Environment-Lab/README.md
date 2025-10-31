@@ -52,8 +52,8 @@ Using a descriptive name helps avoid confusion later when you start managing DNS
 
 Domain controllers need fixed IPs, so I configured DC01’s internal adapter with:
 - IP Address: 192.168.10.10
-= Subnet Mask: 255.255.255.0
-= DNS Server: 192.168.10.10
+- Subnet Mask: 255.255.255.0
+- DNS Server: 192.168.10.10
 
 Then I verified it with `ipconfig /all` to confirm the address persisted after reboot.
 
@@ -96,12 +96,12 @@ After authorizing DHCP in Active Directory, it was ready to hand out IPs to my c
 ## Step 6 — Creating Organizational Units and User Accounts
 
 I opened **Active Directory Users and Computers (ADUC)** and created a clear, departmental structure:
-
+```
 _Users
  ├── IT
  ├── HR
  └── Sales
-
+```
 Then, I added several user accounts in their respective OUs:
 - `jsmith` (IT)
 - `mjohnson` (HR)
