@@ -30,7 +30,7 @@ I created a new **Internal Network** in VirtualBox named `LabNet` and gave **DC0
 
 Clients only used the **LabNet** adapter so all DNS and DHCP traffic stayed within the lab.
 
-![Screenshot - VirtualBox Network Setup](screenshots/virtualbox_network_setup.png)
+![Screenshot - VirtualBox Network Setup](/screenshots/01_VirtualBox Network Setup/VirtualBox Network Setup.png)
 
 This setup ensured I could manage updates on the server while keeping the environment contained — just like an enterprise subnet.
 
@@ -41,7 +41,7 @@ This setup ensured I could manage updates on the server while keeping the enviro
 I installed **Windows Server 2022 (Desktop Experience)** on my first VM and set it up as the main server for the lab.  
 After installation, I renamed the machine to **DC01** and rebooted it to make identification consistent across tools.
 
-![Screenshot - Windows Server Installation](screenshots/windows_server_installation.png)  
+![Screenshot - Windows Server Installation](/screenshots/02_Server Manager + About)  
 ![Screenshot - Renamed to DC01](screenshots/rename_dc01.png)
 
 Using a descriptive name helps avoid confusion later when you start managing DNS zones, DHCP scopes, or Group Policy.
@@ -70,7 +70,7 @@ Next, I installed the **Active Directory Domain Services (AD DS)** role and prom
 During setup, I also allowed the wizard to install **DNS**, since AD heavily depends on it.  
 After the reboot, I logged in as `corp\Administrator`.
 
-![Screenshot - Add Roles and Features (AD DS)](screenshots/add_roles_ad_ds.png)  
+![Screenshot - Add Roles and Features (AD DS,DNS,DHCP)](screenshots/add_roles_ad_ds.png)  
 ![Screenshot - New Forest corp.local](screenshots/new_forest_corp_local.png)  
 ![Screenshot - DNS Zone corp.local](screenshots/dns_zone_corp_local.png)
 
@@ -89,7 +89,7 @@ I created a scope named **CorpScope** covering `192.168.10.100–192.168.10.200`
 
 After authorizing DHCP in Active Directory, it was ready to hand out IPs to my clients.
 
-![Screenshot - DHCP Scope Configuration](screenshots/dhcp_scope.png)
+![Screenshot - DHCP Configuration](screenshots/dhcp_scope.png)
 
 ---
 
