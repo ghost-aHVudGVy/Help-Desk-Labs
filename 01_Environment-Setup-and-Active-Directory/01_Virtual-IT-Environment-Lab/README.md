@@ -125,7 +125,6 @@ Once DC01 was fully configured, I turned to my two client VMs.
 Both were connected only to the **LabNet** adapter and set to obtain IPs automatically via DHCP.  
 When I ran `ipconfig /all`, they correctly received IPs in the 192.168.10.x range and DNS set to 192.168.10.10.
 
-![Screenshot - Client IP from DHCP](./screenshots/client_ip_dhcp.png)  
 ![Screenshot - Domain Join](./screenshots/07_Domain-Join/01_Domain-Join-Successful.png)
 ![Screenshot - Domain Join Successful](./screenshots/07_Domain-Join/02_Domain-Join-Successful.png)
 ![Screenshot - Domain User Login](./screenshots/07_Domain-Join/Domain-User-Login.png)
