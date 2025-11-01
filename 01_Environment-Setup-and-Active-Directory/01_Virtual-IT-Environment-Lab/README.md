@@ -30,7 +30,7 @@ I created a new **Internal Network** in VirtualBox named `LabNet` and gave **DC0
 
 Clients only used the **LabNet** adapter so all DNS and DHCP traffic stayed within the lab.
 
-![Screenshot - VirtualBox Network Setup](/screenshots/01_VirtualBox Network Setup/VirtualBox Network Setup.png)
+![Screenshot - VirtualBox Network Setup](/screenshots/01_VirtualBox-Network-Setup)
 
 This setup ensured I could manage updates on the server while keeping the environment contained — just like an enterprise subnet.
 
@@ -41,8 +41,7 @@ This setup ensured I could manage updates on the server while keeping the enviro
 I installed **Windows Server 2022 (Desktop Experience)** on my first VM and set it up as the main server for the lab.  
 After installation, I renamed the machine to **DC01** and rebooted it to make identification consistent across tools.
 
-![Screenshot - Windows Server Installation](/screenshots/02_Server Manager + About)  
-![Screenshot - Renamed to DC01](screenshots/rename_dc01.png)
+![Screenshot - Server Manager and Naming](/screenshots/02_Server-Manager-&-Naming)
 
 Using a descriptive name helps avoid confusion later when you start managing DNS zones, DHCP scopes, or Group Policy.
 
@@ -57,7 +56,7 @@ Domain controllers need fixed IPs, so I configured DC01’s internal adapter wit
 
 Then I verified it with `ipconfig /all` to confirm the address persisted after reboot.
 
-![Screenshot - DC01 Static IP Configuration](screenshots/dc01_ipconfig.png)
+![Screenshot - Network Setup](/screenshots/03_Network-Setup)
 
 This step ensures reliable DNS resolution for all future domain-joined clients.
 
@@ -70,9 +69,7 @@ Next, I installed the **Active Directory Domain Services (AD DS)** role and prom
 During setup, I also allowed the wizard to install **DNS**, since AD heavily depends on it.  
 After the reboot, I logged in as `corp\Administrator`.
 
-![Screenshot - Add Roles and Features (AD DS,DNS,DHCP)](screenshots/add_roles_ad_ds.png)  
-![Screenshot - New Forest corp.local](screenshots/new_forest_corp_local.png)  
-![Screenshot - DNS Zone corp.local](screenshots/dns_zone_corp_local.png)
+![Screenshot - AD DS Configuration](/screenshots/04_AD-DS-Configuration)
 
 At this point, my domain and DNS services were fully operational.
 
@@ -89,7 +86,7 @@ I created a scope named **CorpScope** covering `192.168.10.100–192.168.10.200`
 
 After authorizing DHCP in Active Directory, it was ready to hand out IPs to my clients.
 
-![Screenshot - DHCP Configuration](screenshots/dhcp_scope.png)
+![Screenshot - DHCP Configuration](/screenshots/05_DHCP-Configuration)
 
 ---
 
@@ -107,8 +104,7 @@ Then, I added several user accounts in their respective OUs:
 - `mjohnson` (HR)
 - `ahunter` (Sales)
 
-![Screenshot - OU Structure](screenshots/ou_structure.png)  
-![Screenshot - User Creation in ADUC](screenshots/aduc_user_creation.png)
+![Screenshot - OU Configuration](/screenshots/06_OU-Configuration)
 
 This setup mirrors how real companies structure their directories and delegate management.
 
@@ -123,18 +119,14 @@ When I ran `ipconfig /all`, they correctly received IPs in the 192.168.10.x rang
 
 I then joined **Client01** and **Client02** to the `corp.local` domain, verified the success messages, and logged in as one of my domain users.
 
-![Screenshot - Client IP from DHCP](screenshots/client_ip_dhcp.png)  
-![Screenshot - Domain Join Successful](screenshots/domain_join_success.png)  
-![Screenshot - Domain User Login](screenshots/domain_login.png)
-
 After logging in, I ran:
 - whoami
 - ping dc01
 - nslookup corp.local
 
-All results confirmed domain connectivity and DNS functionality.
+![Screenshot - Domain Join and Test](/screenshots/07_Domain-Join)
 
-![Screenshot - Connectivity Tests](screenshots/connectivity_tests.png)
+All results confirmed domain connectivity and DNS functionality.
 
 ---
 
@@ -148,14 +140,11 @@ Then, using the **Delegation of Control Wizard** in ADUC, I gave the HelpDeskAdm
 - Reset passwords  
 - Unlock accounts  
 
-This gave my Help Desk admin limited control over the user OUs without giving full domain privileges.
-
-![Screenshot - Help Desk User and Group](screenshots/helpdesk_group.png)  
-![Screenshot - Delegation Wizard](screenshots/delegation_wizard.png)
+This gave my Help Desk admin limited control over the user OUs without giving full domain privileges.  
 
 Finally, on the Help Desk workstation, I installed **RSAT: Active Directory Domain Services and Lightweight Directory Tools** so the delegated admin could use ADUC remotely.
 
-![Screenshot - RSAT Installed](screenshots/rsat_installed.png)
+![Screenshot - Delegating Help Desk Permissions](/screenshots/08_Delegating-Help-Desk-Permissions)
 
 I tested the permissions by logging in as `corp\hdadmin` and everything was working as intended.
 
@@ -166,7 +155,7 @@ I tested the permissions by logging in as `corp\hdadmin` and everything was work
 For easier administration, I enabled **Remote Desktop** and **PowerShell Remoting** on all machines.  
 This allowed me to connect between VMs just like a sysadmin would in production.
 
-![Screenshot - Remote Desktop Enabled](screenshots/remote_desktop_enabled.png)
+![Screenshot - Remote Desktop Enabled](/screenshots/09_Enabling-Remote-Management)
 
 ---
 
@@ -176,7 +165,7 @@ Once everything was working, I took snapshots of each VM to save the environment
 
 This ensures I can always revert to a clean baseline before experimenting further.
 
-![Screenshot - VirtualBox Snapshots](screenshots/virtualbox_snapshots.png)
+![Screenshot - Snapshot](/screenshots/10_Snapshot)
 
 ---
 
