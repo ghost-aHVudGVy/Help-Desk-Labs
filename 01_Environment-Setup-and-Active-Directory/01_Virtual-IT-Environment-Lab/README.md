@@ -42,6 +42,7 @@ I installed **Windows Server 2022 (Desktop Experience)** on my first VM and set 
 After installation, I renamed the machine to **DC01** and rebooted it to make identification consistent across tools.
 
 [Screenshot - Windows Server Installation](./screenshots/02_Server-Manager-&-Naming/Windows-Server-Installation.png)
+
 [Screenshot - Renamed to DC01](./screenshots/02_Server-Manager-&-Naming/Renamed-to-DC01.png)
 
 Using a descriptive name helps avoid confusion later when you start managing DNS zones, DHCP scopes, or Group Policy.
@@ -70,8 +71,10 @@ Next, I installed the **Active Directory Domain Services (AD DS)** role and prom
 During setup, I also allowed the wizard to install **DNS**, since AD heavily depends on it.  
 After the reboot, I logged in as `corp\Administrator`.
 
-[Screenshot - Add Roles and Features (AD DS)](./screenshots/04_AD-DS-Configuration/Add-Roles-and-Features-(AD-DS,DNS,DHCP).png)  
-[Screenshot - New Forest corp.local](./screenshots/04_AD-DS-Configuration/New-Forest-corp.local.png)  
+[Screenshot - Add Roles and Features (AD DS)](./screenshots/04_AD-DS-Configuration/Add-Roles-and-Features-(AD-DS,DNS,DHCP).png)
+
+[Screenshot - New Forest corp.local](./screenshots/04_AD-DS-Configuration/New-Forest-corp.local.png)
+
 [Screenshot - DNS Zone corp.local](./screenshots/04_AD-DS-Configuration/DNS-Zone-corp.local.png)
 
 At this point, my domain and DNS services were fully operational.
@@ -90,9 +93,13 @@ I created a scope named **CorpScope** covering `192.168.10.100–192.168.10.200`
 After authorizing DHCP in Active Directory, it was ready to hand out IPs to my clients.
 
 [Screenshot - 01_DHCP Configuration](./screenshots/05_DHCP-Configuration/01_DHCP-Configuration.png)
+
 [Screenshot - 02_DHCP Configuration](./screenshots/05_DHCP-Configuration/02_DHCP-Configuration.png)
+
 [Screenshot - 03_DHCP Configuration](./screenshots/05_DHCP-Configuration/03_DHCP-Configuration.png)
+
 [Screenshot - 04_DHCP Configuration](./screenshots/05_DHCP-Configuration/04_DHCP-Configuration.png)
+
 [Screenshot - 05_DHCP Configuration](./screenshots/05_DHCP-Configuration/05_DHCP-Configuration.png)
 
 ---
@@ -111,7 +118,8 @@ Then, I added several user accounts in their respective OUs:
 - `mjohnson` (HR)
 - `ahunter` (Sales)
 
-[Screenshot - OU Structure](./screenshots/06_OU-Configuration/OU-Structure.png)  
+[Screenshot - OU Structure](./screenshots/06_OU-Configuration/OU-Structure.png)
+
 [Screenshot - User Creation in ADUC](./screenshots/06_OU-Configuration/User-Creation-in-ADUC.png)
 
 This setup mirrors how real companies structure their directories and delegate management.
@@ -126,7 +134,9 @@ Both were connected only to the **LabNet** adapter and set to obtain IPs automat
 When I ran `ipconfig /all`, they correctly received IPs in the 192.168.10.x range and DNS set to 192.168.10.10.
 
 [Screenshot - Domain Join](./screenshots/07_Domain-Join/01_Domain-Join-Successful.png)
+
 [Screenshot - Domain Join Successful](./screenshots/07_Domain-Join/02_Domain-Join-Successful.png)
+
 [Screenshot - Domain User Login](./screenshots/07_Domain-Join/Domain-User-Login.png)
 
 I then joined **Client01** and **Client02** to the `corp.local` domain, verified the success messages, and logged in as one of my domain users.
@@ -153,10 +163,15 @@ Then, using the **Delegation of Control Wizard** in ADUC, I gave the HelpDeskAdm
 - Unlock accounts  
 
 [Screenshot - 01_Help Desk User and Group](./screenshots/08_Delegating-Help-Desk-Permissions/01_Help-Desk-User-and-Group.png)
+
 [Screenshot - 02_Help Desk User and Group](./screenshots/08_Delegating-Help-Desk-Permissions/02_Help-Desk-User-and-Group.png)  
+
 [Screenshot - 03_Help Desk User and Group](./screenshots/08_Delegating-Help-Desk-Permissions/03_Help-Desk-User-and-Group.png)  
+
 [Screenshot - 01_Delegation Wizard](./screenshots/08_Delegating-Help-Desk-Permissions/01_Delegation-Wizard.png)
+
 [Screenshot - 02_Delegation Wizard](./screenshots/08_Delegating-Help-Desk-Permissions/02_Delegation-Wizard.png)
+
 [Screenshot - 03_Delegation Wizard](./screenshots/08_Delegating-Help-Desk-Permissions/03_Delegation-Wizard.png)
 
 This gave my Help Desk admin limited control over the user OUs without giving full domain privileges.  
@@ -175,6 +190,7 @@ For easier administration, I enabled **Remote Desktop** and **PowerShell Remotin
 This allowed me to connect between VMs just like a sysadmin would in production.
 
 [Screenshot - 01_Remote Desktop Enabled](./screenshots/09_Enabling-Remote-Management/01_Remote-Desktop-Enabled.png)
+
 [Screenshot - 02_Remote Desktop Enabled](./screenshots/09_Enabling-Remote-Management/02_Remote-Desktop-Enabled.png)
 
 ---
