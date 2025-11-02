@@ -78,8 +78,8 @@ This confirmed that the GPO was applied successfully.
 [Shared-Permissions](./screenshots/07_Shared-Permissions.png)
 [GPO-Mapping](./screenshots/08_GPO-Mapping.png)
 [GPO-Mapping-Finished](./09_GPO-Mapping-Finished.png))
-[New-Group-Wizard](./screenshots/10_GPO-Mapping-Result.png)
-[New-Group-Wizard](./screenshots/11_GPUpdate-Force.png)
+[GPUpdate-Force](./screenshots/10_GPUpdate-Force.png)
+[GPO-Mapping-Result](./screenshots/11_GPO-Mapping-Result.png)
 
 *Purpose:* Automate and verify network drive mapping for domain users through Group Policy. 
 
