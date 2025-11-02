@@ -74,8 +74,6 @@ This lab provided me with practical experience in Active Directory, where I mana
 
 By completing it, I gained practical experience with the same tools and workflows used in real IT environments. From provisioning and access control to password resets and group administration.
 
-All configuration steps and verification screenshots are documented here to illustrate both the process and the outcome.
-
 ---
 
 
