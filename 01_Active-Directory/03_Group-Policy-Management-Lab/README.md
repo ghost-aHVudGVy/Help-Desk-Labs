@@ -27,8 +27,10 @@ After that, I edited the GPO by enabled the setting and pointed it to a shared i
 
 `\\DC01\Shared\wallpaper.jpg`
 
-📸 **Screenshot #2:** “Corp Desktop Wallpaper” GPO linked to the domain.  
-📸 **Screenshot #3:** Group Policy Editor showing the wallpaper path configuration.
+[GPO-Created](./screenshots/01_GPO-Created.png)
+[Permissions-For-Wallpaper](./screenshots/02_Permissions-For-Wallpaper.png)
+[Wallpaper-Location-Setup](./screenshots/03_Wallpaper-Location-Setup.png)
+[Wallpeper-Enabled](./screenshots/04_Wallpeper-Enabled.png)
 
 *Purpose:* Demonstrates GPO deployment that affects the user environment, confirming end-to-end policy delivery.
 
@@ -47,7 +49,7 @@ I applied the following settings:
 - Password must meet complexity requirements: **Enabled**
 - Maximum password age: **60 days**
 
-📸 **Screenshot #4:** Password policy settings inside the Group Policy Editor.
+[Password-Policy](./Lab/screenshots/05_Password-Policy.png)
 
 *Purpose:* Shows understanding of enforcing organization-wide security standards through GPOs.
 
@@ -72,9 +74,12 @@ After applying the GPO, I logged into **Client01** as the domain user `corp\jsmi
 Once the policy was updated, the **Z:** drive appeared automatically in File Explorer, mapped to the shared folder on DC01.  
 This confirmed that the GPO was applied successfully.  
 
-📸 **Screenshot #5:** Drive Maps configuration for Z: → `\\DC01\Shared`  
-📸 **Screenshot #6:** Client01 File Explorer showing mapped network drive Z:  
-📸 **Screenshot #7:** Command Prompt showing successful `gpupdate /force` update  
+[Share-Drive](.Lab/screenshots/06_Share-Drive.png)
+[Shared-Permissions](./screenshots/07_Shared-Permissions.png)
+[GPO-Mapping](./screenshots/08_GPO-Mapping.png)
+[GPO-Mapping-Finished](./09_GPO-Mapping-Finished.png))
+[New-Group-Wizard](./screenshots/10_GPO-Mapping-Result.png)
+[New-Group-Wizard](./screenshots/11_GPUpdate-Force.png)
 
 *Purpose:* Automate and verify network drive mapping for domain users through Group Policy. 
 
