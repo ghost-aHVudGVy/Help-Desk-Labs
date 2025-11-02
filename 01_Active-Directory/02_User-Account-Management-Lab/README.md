@@ -34,6 +34,7 @@ Inside my organizational unit, I created a new user to simulate onboarding a new
 I entered the user details and set an initial password policy requiring a password change at next logon.
 
 [Screenshot - New-User-Wizard](./screenshots/02_New-User-Wizard.png)
+
 [Screenshot - User-Created](./screenshots/03_User-Created.png)
 
 ---
@@ -44,6 +45,7 @@ Next, I tested lifecycle control by disabling the same user account to simulate 
 After confirming the status change icon in ADUC, I re-enabled the account to restore access.
 
 [Screenshot - Account-Disabled](./screenshots/04_Account-Disabled.png)
+
 [Screenshot - Account-Reenabled](./screenshots/05_Account-Reenabled.png)
 
 ---
@@ -54,6 +56,7 @@ To simulate a Help Desk support scenario, I performed a password reset and force
 I also tested account lockout by intentionally entering incorrect credentials multiple times, then unlocked the account.
 
 [Screenshot - Reset-Password](./screenshots/06_Reset-Password.png)
+
 [Screenshot - Account-Unlock](./screenshots/07_Account-Unlock.png)
 
 ---
@@ -64,6 +67,7 @@ Finally, I created new security groups (Sales Manager) to practice role-based ac
 I added the user I've created in the first step users to the group and verified group membership through the **Members** tab.
 
 [Screenshot - New-Group-Wizard](./screenshots/08_New-Group-Wizard.png)
+
 [Screenshot - Group-Member-Added](./screenshots/09_Group-Member-Added.png)
 
 ---
