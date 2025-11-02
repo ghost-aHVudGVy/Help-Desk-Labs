@@ -63,8 +63,6 @@ I also tested account lockout by intentionally entering incorrect credentials mu
 Finally, I created new security groups (Sales Manager) to practice role-based access control.  
 I added the user I've created in the first step users to the group and verified group membership through the **Members** tab.
 
-**Screenshot 8:** Group Properties window showing multiple members.
-**Screenshot 9
 [Screenshot - New-Group-Wizard](./screenshots/08_New-Group-Wizard.png)
 [Screenshot - Group-Member-Added](./screenshots/09_Group-Member-Added.png)
 
