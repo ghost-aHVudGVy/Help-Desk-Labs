@@ -1,6 +1,8 @@
 # Group Policy Management Lab — Active Directory Environment
  
-My goal with this lab was to strengthen my understanding of **Group Policy Management**, how it’s created, linked, and applied across a domain environment. I focused on practical examples that directly mirror real IT admin work, such as enforcing password policies, mapping shared drives, and standardizing user desktops.
+My goal with this lab was to strengthen my understanding of **Group Policy Management**, how it’s created, linked, and applied across a domain environment. 
+
+I focused on practical examples that directly mirror real IT admin work, such as enforcing password policies, mapping shared drives, and standardizing user desktops.
 
 ---
 
@@ -20,7 +22,8 @@ This setup replicates a small corporate environment, with both machines connecte
 
 ## Step 1 — Creating and Linking a Desktop Wallpaper GPO
 
-I started by logging into **DC01** as `corp\Administrator` and opening the **Group Policy Management Console (GPMC)** from Server Manager. To validate that new policies would apply correctly, I created a GPO to set a domain-wide desktop wallpaper.  
+I started by logging into **DC01** as `corp\Administrator` and opening the **Group Policy Management Console (GPMC)** from Server Manager. To validate that new policies would apply correctly, I created a GPO to set a domain-wide desktop wallpaper.
+
 In **GPMC**, I right-clicked the domain (`corp.local`) → **Create a GPO in this domain, and Link it here…**, naming it **“Corp Desktop Wallpaper.”**
 
 After that, I edited the GPO by enabled the setting and pointed it to a shared image on the domain controller: 
@@ -28,8 +31,11 @@ After that, I edited the GPO by enabled the setting and pointed it to a shared i
 `\\DC01\Shared\wallpaper.jpg`
 
 [GPO-Created](./screenshots/01_GPO-Created.png)
+
 [Permissions-For-Wallpaper](./screenshots/02_Permissions-For-Wallpaper.png)
+
 [Wallpaper-Location-Setup](./screenshots/03_Wallpaper-Location-Setup.png)
+
 [Wallpeper-Enabled](./screenshots/04_Wallpeper-Enabled.png)
 
 *Purpose:* Demonstrates GPO deployment that affects the user environment, confirming end-to-end policy delivery.
@@ -75,10 +81,15 @@ Once the policy was updated, the **Z:** drive appeared automatically in File Exp
 This confirmed that the GPO was applied successfully.  
 
 [Share-Drive](.Lab/screenshots/06_Share-Drive.png)
+
 [Shared-Permissions](./screenshots/07_Shared-Permissions.png)
+
 [GPO-Mapping](./screenshots/08_GPO-Mapping.png)
-[GPO-Mapping-Finished](./09_GPO-Mapping-Finished.png))
+
+[GPO-Mapping-Finished](./09_GPO-Mapping-Finished.png)
+
 [GPUpdate-Force](./screenshots/10_GPUpdate-Force.png)
+
 [GPO-Mapping-Result](./screenshots/11_GPO-Mapping-Result.png)
 
 *Purpose:* Automate and verify network drive mapping for domain users through Group Policy. 
