@@ -96,7 +96,7 @@ During setup, I ran through common troubleshooting steps to confirm service heal
 
 These tests helped ensure the environment was stable and resilient — an important habit in enterprise IT work.
 
-# Step 7 — Final Outcome
+## Step 7 — Final Outcome
 
 At the end of this lab:
 
@@ -107,7 +107,7 @@ At the end of this lab:
 
 This setup fully simulated how printers are deployed and managed in real Windows domain environments — from creation to user access.
 
-# Key Takeaways
+## Conclusion
 
 Completing this lab helped me gain hands-on experience with:
 
@@ -117,10 +117,3 @@ Completing this lab helped me gain hands-on experience with:
 - Automating printer availability for end users
 
 It also reinforced the importance of structured testing and documentation — key skills for systems administrators and IT support professionals.
-
-# Conclusion
-
-This lab gave me practical insight into managing network printers in a domain environment.
-Even though it used a simulated device, the process mirrored how print infrastructure is handled in production networks — from initial configuration to policy-based deployment and validation.
-
-It reflects how I approach IT work: methodical, detail-oriented, and focused on understanding both the technical process and the administrative reasoning behind it.
