@@ -33,7 +33,7 @@ This setup replicates a small corporate environment, with both machines connecte
 
 [Sharing-Permissions-Authenticated-Users](./screenshots/01_Sharing-Permissions-Authenticated-Users.png)
 
-[Sharing-Permissions-Help-Deskd](./screenshots/02_Sharing-Permissions-Help-Desk.png)
+[Sharing-Permissions-Help-Desk](./screenshots/02_Sharing-Permissions-Help-Desk.png)
 
 ---
 
@@ -73,7 +73,7 @@ This setup replicates a small corporate environment, with both machines connecte
 
 [Mapped-Network-Drive](./screenshots/06_Mapped-Network-Drive.png)
 
-[Sucssessful-Modification-From-Help-Desk](./screenshots/07_Sucssessful-Modification-From-Help-Desk.png.png)
+[Successful-Modification-from-Help-Desk](./screenshots/07_Sucssessful-Modification-From-Help-Desk.png.png)
 
 [Permission-Error-From-HR](./screenshots/08_Permission-Error-From-HR.png)
 
