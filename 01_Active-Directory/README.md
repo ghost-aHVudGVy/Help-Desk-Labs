@@ -1,59 +1,78 @@
 # Active Directory & IT Infrastructure Lab
 
-This project demonstrates my ability to design, build, and manage a fully functional Active Directory environment — the kind of setup used in real corporate IT systems.  
-I created everything from scratch to understand how domains, users, permissions, and group policies operate together in a secure and structured way.
+## Overview
+This project consists of four hands-on labs that simulate real-world IT administration tasks within a Windows Server domain environment.  
+Each lab builds upon the previous one, starting from infrastructure setup and progressing to user management, Group Policy configuration, and secure file sharing.  
+Together, they demonstrate a full workflow of how Active Directory environments are deployed, managed, and maintained in enterprise settings.
 
 ---
 
-## Phase 1: Environment Setup
+## 01_Virtual IT Environment Setup
 
-I began by setting up a complete virtual IT environment using **VirtualBox**, configured to replicate a small business network.  
+In this lab, I built a fully functional Windows domain environment from scratch to replicate a small corporate network.  
 The setup included:
 
-- **Windows Server 2022 (DC01)** — configured as a Domain Controller, DNS, and DHCP server.  
-- **Windows 10 Client (Client01)** — joined to the domain for testing.  
-- A dedicated internal subnet ensuring isolated, enterprise-style connectivity.
+- **Domain Controller (DC01)** – running Active Directory Domain Services (AD DS), DNS, and DHCP  
+- **Two Client Machines (Client01 & Client02)** – domain-joined workstations  
+- **Delegated Help Desk Admin (HDAdmin)** – a limited administrative account for testing permissions
 
-This phase built the technical foundation for everything that followed — verifying domain communication, DHCP leases, and name resolution across devices.
+To keep the environment realistic and secure, I designed an isolated internal network in VirtualBox. DC01 managed all essential network services, including IP addressing through DHCP and name resolution through DNS.
 
----
+Once the infrastructure was ready, I:
 
-## Phase 2: Active Directory User Management
+- Created a **new Active Directory forest** (`corp.local`)  
+- Structured the directory with **Organizational Units** for IT, HR, and Sales departments  
+- **Joined both clients** to the domain and verified DNS, domain connectivity, and user logins  
+- Configured a **Help Desk administrative account** with delegated permissions to manage users, reset passwords, and unlock accounts  
+- Tested remote management using **RSAT tools** and confirmed access control worked as expected
 
-Once the environment was stable, I focused on **Active Directory administration** — the daily work of most IT support teams.
-
-I created and managed user accounts, grouped them by department, and applied consistent naming conventions.  
-To simulate real help desk workflows, I practiced resetting passwords, unlocking accounts, and assigning users to security and distribution groups.  
-I also documented these procedures in a **Standard Operating Procedure (SOP)** to ensure they could be repeated reliably in any environment.
-
-This phase strengthened my understanding of user lifecycle management and domain hygiene.
+This project gave me a strong, hands-on understanding of how **Active Directory, DNS, and DHCP** interact within a corporate environment. It also reinforced the importance of structured planning, secure delegation, and documentation.
 
 ---
 
-## Phase 3: Group Policy Management
+## 02_User Account Management Lab
 
-Next, I worked on **centralized configuration using Group Policy Objects (GPOs)**.
+This lab focused on developing hands-on experience with essential Active Directory administration.
+The goal was to practice creating, managing, and troubleshooting user accounts in a simulated corporate environment.
 
-I created and linked several policies that applied to all users and computers in the domain:
-- A **desktop wallpaper policy** to standardize user environments.
-- A **password policy** enforcing complexity, minimum length, and expiration.
-- A **network drive mapping policy** that automatically connected users to a shared folder upon login.
+The lab took place within the domain setup from my previous project, which included a Windows Server domain controller (DC01) and a domain-joined Windows 10 workstation (Client01), both running on an isolated internal network.
 
-After testing on the client machine, I confirmed that all policies deployed successfully through `gpupdate /force`.  
-This phase gave me hands-on experience with how organizations enforce consistency and security at scale through GPOs.
+I began by using the **Active Directory Users and Computers (ADUC)** console on DC01 to explore the domain structure and manage organizational units. From there, I worked through the core lifecycle of user management:
+
+- **Created new user accounts** to simulate employee onboarding and configured password policies requiring password changes at first logon  
+- **Disabled and re-enabled accounts** to represent temporary suspensions and reinstatements  
+- **Reset and unlocked passwords** to mirror real Help Desk support scenarios where users forget or lock themselves out  
+- **Created and managed security groups** to apply role-based access control and verified group membership in ADUC
+
+By the end of this lab, I had a complete understanding of how user and group management operates in Active Directory, from account provisioning and access control to password resets and security delegation.  
+This reinforced my ability to handle everyday administrative tasks confidently and accurately, following standard IT support practices.
 
 ---
 
-## Phase 4: File Permissions and Network Shares
+## 03_Group Policy Management Lab
 
-To complete the lab, I configured **file sharing and access control** on the server.  
-I created shared folders, defined both **NTFS** and **share-level permissions**, and tested how different user groups interacted with those resources.
+This lab focused on mastering **Group Policy Management** — learning how to create, link, and apply domain-wide policies that shape both security and user experience.
 
-For example:
-- `IT_Staff` users had full read/write access.  
-- `HR_Staff` users were restricted to read-only access.
+I configured and tested three key GPOs:
 
-This demonstrated how layered permissions protect sensitive data while keeping workflows efficient.
+- **Desktop Wallpaper Policy:** Created and linked a domain-level GPO that automatically applied a company-branded wallpaper for all users, confirming that user environment settings propagate correctly through Active Directory.
+- **Password Policy:** Updated the Default Domain Policy to enforce stronger password requirements — including a minimum of eight characters, complexity rules, and a 60-day expiration — mirroring real organizational security standards.
+- **Mapped Network Drive Policy:** Created a GPO that automatically mapped a shared folder (`\\DC01\Shared`) as drive **Z:** for all domain users, reducing manual setup and ensuring consistent access to shared resources.
+
+This lab demonstrated practical use of Group Policy to automate configuration, strengthen security, and standardize the IT environment across all clients.
+
+---
+
+## 04_File Permissions & Network Share Management
+
+This lab focused on managing shared folders and permissions in a Windows domain environment.
+
+- Created a shared folder (`C:\Shared`) on **DC01** and set proper **share permissions** for Authenticated Users and IT_Staff.  
+- Configured **NTFS permissions** to give IT_Staff modify rights and HR_Staff read-only access.  
+- Tested access from **Client01** to confirm permissions worked as intended.  
+- Mapped the shared folder as a **network drive (Z:)** for easy access.
+
+With this lab I gained hands-on experience setting up and securing shared network resources using both NTFS and share-level permissions.
 
 ---
 
@@ -69,17 +88,4 @@ By the end of this project, I had:
 
 Through this process, I developed not just technical skill, but a stronger sense of **how IT systems are structured, secured, and maintained** in real-world environments.
 
----
-
-## Next Steps
-
-To extend this project, I plan to:
-
-- Automate user and GPO management using **PowerShell**.  
-- Implement **event log monitoring** and alerting.  
-- Test **backup and recovery** procedures for the domain controller.  
-
----
-
-*This lab represents my foundational work in system administration — combining hands-on configuration, structured documentation, and professional presentation.*
-
+*This lab represents my foundational work in system administration, combining hands-on configuration, structured documentation, and professional presentation.*
