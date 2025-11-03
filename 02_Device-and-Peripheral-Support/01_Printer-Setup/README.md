@@ -25,18 +25,18 @@ This project helped me strengthen my understanding of **print management, GPO de
 I began by installing the **Print and Document Services** role on my domain controller (DC01).  
 Through **Server Manager → Add Roles and Features**, I selected the **Print Server** role service and completed the installation.
 
-[Instal-Print-Role](/screenshots/01_Instal-Print-Role.png)
+[Instal-Print-Role](./screenshots/01_Instal-Print-Role.png)
 
-[Instaling-Print-Server](/screenshots/02_Instaling-Print-Server.png)
+[Instaling-Print-Server](./screenshots/02_Instaling-Print-Server.png)
 
 Once installed, I verified the **Print Spooler** service was running and enabled **File and Printer Sharing** through Windows Firewall.  
 This ensured that the print server could communicate properly with client systems across the network.
 
-[Print-Managemant-Tree](/screenshots/03_Print-Managemant-Tree.png)
+[Print-Managemant-Tree](./screenshots/03_Print-Managemant-Tree.png)
 
-[Spooler-Status.png](/screenshots/04_Spooler-Status.png)
+[Spooler-Status.png](./screenshots/04_Spooler-Status.png)
 
-[Enable-File-&-Printer-Sharing-(Firewall)](/screenshots/05_Enable-File-&-Printer-Sharing-(Firewall).png)
+[Enable-File-&-Printer-Sharing-(Firewall)](./screenshots/05_Enable-File-&-Printer-Sharing-(Firewall).png)
 
 ---
 
@@ -50,10 +50,10 @@ From the **Print Management Console**, I added a new printer:
 - **Printer Name:** Office_Printer  
 - **Share Name:** Office_Printer
 
-[AddPrinter-TCPIP](/screenshots/06_AddPrinter-TCPIP.png)
-[Printer-Driver-Select](/screenshots/07_Printer-Driver-Select.png)
-[Printer-Setup](/screenshots/08_Printer-Setup.png)
-[Printer-Shared-Properties](/screenshots/09_Printer-Shared-Properties.png)
+[AddPrinter-TCPIP](./screenshots/06_AddPrinter-TCPIP.png)
+[Printer-Driver-Select](./screenshots/07_Printer-Driver-Select.png)
+[Printer-Setup](./screenshots/08_Printer-Setup.png)
+[Printer-Shared-Properties](./screenshots/09_Printer-Shared-Properties.png)
 
 
 After installation, I confirmed that the printer appeared under `Print Management → DC01 → Printers` and that it was shared properly.  
@@ -82,11 +82,11 @@ To make deployment automatic, I configured a **Group Policy Object** to distribu
 From **Print Management**, I right-clicked the printer and selected **Deploy with Group Policy**.  
 I created a new GPO named `GPO_Deploy_Printer`, linked it to the appropriate OU, and chose **Per User** deployment. 
 
-[Deploy-Printer-via-GPO](/screenshots/11_PrintMgmt_DeployGPO.png)
+[Deploy-Printer-via-GPO](./screenshots/11_PrintMgmt_DeployGPO.png)
 
 After refreshing Group Policy on `Client01` (`gpupdate /force`), the printer appeared automatically under **Devices and Printers**, confirming successful GPO deployment.
 
-[Client-Printer-Listings](/screenshots/12_Client-Printer-Listings.png)
+[Client-Printer-Listings](./screenshots/12_Client-Printer-Listings.png)
 
 ---
 
@@ -96,13 +96,13 @@ To validate the configuration, I performed a simulated print test:
 - Opened **Printer Properties** on `Client01`
 - Selected **Print Test Page**
 
-[Test-Page-Print](/screenshots/13_Test-Page.png)
+[Test-Page-Print](./screenshots/13_Test-Page.png)
 
 The print job completed successfully and cleared from the queue, showing that the entire communication chain — from client to print server — was functioning properly.
 
 On the server side, I monitored the **Print Queue** in the Print Management console to confirm that the job passed through DC01 and was processed without errors.
 
-[Server-Printer-Queue-Empty](/screenshots/14_Server-Printer-Queue-Empty.png)
+[Server-Printer-Queue-Empty](./screenshots/14_Server-Printer-Queue-Empty.png)
 
 ---
 
