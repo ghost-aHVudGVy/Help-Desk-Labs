@@ -1,4 +1,4 @@
-# Lab 4 — File Permissions & Network Share Management
+# File Permissions & Network Share Management
 The goal of this lab was to understand how **file sharing and access control** work in a domain environment — specifically how NTFS and share-level permissions interact.
 
 This is a core skill for both Help Desk and Systems Administrator roles, as it directly affects how users access shared company resources.
