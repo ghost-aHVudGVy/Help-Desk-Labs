@@ -31,7 +31,9 @@ This setup replicates a small corporate environment, with both machines connecte
   - Added **Authenticated Users → Read**
   - Added **IT_Staff → Change, Read**
 
-📸 **Screenshot #1:** Folder Sharing permissions showing `Authenticated Users` (Read) and `IT_Staff` (Change, Read).
+[Sharing-Permissions-Authenticated-Users](./screenshots/01_Sharing-Permissions-Authenticated-Users.png)
+
+[Sharing-Permissions-Help-Deskd](./screenshots/02_Sharing-Permissions-Help-Desk.png)
 
 ---
 
@@ -44,7 +46,9 @@ This setup replicates a small corporate environment, with both machines connecte
 - Granted **IT_Staff** → Modify, Read & Execute, List Folder Contents, Read, Write.
 - Granted **HR_Staff** → Read-only permissions.
 
-📸 **Screenshot #2:** Folder Security tab showing NTFS permissions for both `IT_Staff` and `HR_Staff`.
+[NTFS-Permissions-Help-Desk](./screenshots/03_NTFS-Permissions-Help-Desk.png)
+
+[NTFS-Permissions-Authenticated-Users](./screenshots/04_NTFS-Permissions-Authenticated-Users.png)
 
 ---
 
@@ -65,10 +69,13 @@ This setup replicates a small corporate environment, with both machines connecte
 - Checked **Reconnect at sign-in**
 - Clicked **Finish**
 
-📸 **Screenshot #3:** Client01 showing access to `\\DC01\Shared` in File Explorer.  
-📸 **Screenshot #4:** Drive mapping wizard showing `Z:` → `\\DC01\Shared`.  
-📸 **Screenshot #5:** File Explorer confirming mapped network drive `Z:` visible under This PC.  
-📸 **Screenshot #6:** Error message when HR_Staff attempts to modify a file (permission denied).
+[Mapping-Wizard](./screenshots/05_Mapping-Wizard.png)
+
+[Mapped-Network-Drive](./screenshots/06_Mapped-Network-Drive.png)
+
+[Sucssessful-Modification-From-Help-Desk](./screenshots/07_Sucssessful-Modification-From-Help-Desk.png.png)
+
+[Permission-Error-From-HR](./screenshots/08_Permission-Error-From-HR.png)
 
 ---
 
