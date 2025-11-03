@@ -2,7 +2,9 @@
 
 ## Overview
 This project consists of four hands-on labs that simulate real-world IT administration tasks within a Windows Server domain environment.  
-Each lab builds upon the previous one, starting from infrastructure setup and progressing to user management, Group Policy configuration, and secure file sharing.  
+
+Each lab builds upon the previous one, starting from infrastructure setup and progressing to user management, Group Policy configuration, and secure file sharing.
+
 Together, they demonstrate a full workflow of how Active Directory environments are deployed, managed, and maintained in enterprise settings.
 
 ---
