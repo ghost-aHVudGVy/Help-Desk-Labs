@@ -48,9 +48,9 @@ This setup replicates a small corporate environment, with both machines connecte
 
 ---
 
-## Step 3 — Test Access from Client Machine
+## Step 3 — Test Access and Map Network Drive on Client Machine
 
-**Purpose:** Verify that permissions apply as intended.
+**Purpose:** Verify that permissions apply as intended and test drive mapping.
 
 - Logged into `Client01` as `corp\jsmith` (member of IT_Staff).
 - Opened File Explorer → `\\DC01\Shared`.
@@ -58,19 +58,17 @@ This setup replicates a small corporate environment, with both machines connecte
   - Read, write, and modify permissions worked correctly for IT_Staff.
   - HR_Staff users could open but not modify files.
 
-📸 **Screenshot #3:** Client01 showing successful access by IT_Staff user.
-📸 **Screenshot #4:** Error message when HR_Staff attempts to modify a file (permission denied).
+**Mapped the drive manually:**
+- In File Explorer, right-clicked **This PC → Map network drive...**
+- Selected **Drive letter:** `Z:`
+- Entered **Folder path:** `\\DC01\Shared`
+- Checked **Reconnect at sign-in**
+- Clicked **Finish**
 
----
-
-## Step 4 — Test Group Policy Drive Mapping Integration
-
-**Purpose:** Validate integration with the Group Policy lab.
-
-- Verified that the shared folder could be mapped via the `Corp Network Drives` GPO created earlier.
-- Confirmed users automatically received drive `Z:` → `\\DC01\Shared`.
-
-📸 **Screenshot #5:** File Explorer showing mapped `Z:` drive (via GPO).
+📸 **Screenshot #3:** Client01 showing access to `\\DC01\Shared` in File Explorer.  
+📸 **Screenshot #4:** Drive mapping wizard showing `Z:` → `\\DC01\Shared`.  
+📸 **Screenshot #5:** File Explorer confirming mapped network drive `Z:` visible under This PC.  
+📸 **Screenshot #6:** Error message when HR_Staff attempts to modify a file (permission denied).
 
 ---
 
