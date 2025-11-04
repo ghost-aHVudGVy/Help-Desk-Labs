@@ -26,10 +26,10 @@ Next, I configured VPN access using Windows RRAS on the server and a built-in VP
 
 After that to test real-world troubleshooting situations, I recreated two common VPN issues:
 
-### Authentication Failure
+### Authentication Failure:
 I connected with incorrect login credentials to generate an authentication error. I reviewed Event Viewer and RRAS logs to confirm the cause, then corrected the user permissions and credentials to restore access.
 
-### DNS Resolution Failure Over VPN
+### DNS Resolution Failure Over VPN:
 The VPN connection succeeded but internal hostnames did not resolve. The issue was traced to the VPN adapter not receiving the internal DNS server address. After modifying the RRAS configuration to provide the correct DNS IP and refreshing the client configuration, internal name resolution worked as expected.
 
 This lab highlighted the importance of verifying both authentication and DNS configuration when diagnosing VPN issues.
