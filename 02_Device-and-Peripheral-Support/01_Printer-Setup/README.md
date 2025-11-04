@@ -51,8 +51,11 @@ From the **Print Management Console**, I added a new printer:
 - **Share Name:** Office_Printer
 
 [AddPrinter-TCPIP](./screenshots/06_AddPrinter-TCPIP.png)
+
 [Printer-Driver-Select](./screenshots/07_Printer-Driver-Select.png)
+
 [Printer-Setup](./screenshots/08_Printer-Setup.png)
+
 [Printer-Shared-Properties](./screenshots/09_Printer-Shared-Properties.png)
 
 
