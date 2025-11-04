@@ -32,7 +32,6 @@ This setup replicates a small corporate environment, with both machines connecte
 I began by installing the **Remote Access** role and enabling **Routing and Remote Access (RRAS)**.  
 During configuration, I selected **VPN access** and ensured that client IP assignment was handled inside the private network range.
 
-**Screenshots:**
 - [Remote-Access](./screenshots/01_Remote-Access.png)
 - [DirectAccess-&-VPN+Routing](./screenshots/02_DirectAccess-&-VPN+Routing.png)
 - [RRAS-VPN-Setup](./screenshots/03_RRAS-VPN-Setup.png)
