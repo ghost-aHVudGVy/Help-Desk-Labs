@@ -49,3 +49,9 @@ This lab highlighted the importance of verifying both authentication and DNS con
 
 By intentionally breaking and fixing both DNS and VPN connectivity, I developed a repeatable diagnostic approach based on baseline comparison, configuration validation, and targeted testing. This strengthened my ability to quickly identify root causes in real-world network support situations.
 
+---
+
+## Additional Documentation
+
+Each lab in this project includes detailed, step-by-step walkthroughs, annotated screenshots, and captured log outputs.  
+If you would like to review the full process, troubleshooting notes, or supporting evidence, you can open the individual lab folders in this repository.
