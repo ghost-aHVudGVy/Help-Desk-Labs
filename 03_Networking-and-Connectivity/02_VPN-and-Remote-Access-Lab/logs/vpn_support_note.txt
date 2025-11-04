@@ -1,0 +1,14 @@
+Session ID: VPN-001
+Tool: Windows RRAS (PPTP)
+Date: 2025-11-04
+Technician: A.K.
+Client: Client01
+Issue: Authentication failure (error 691) — wrong password
+Action: Reset password, confirmed Dial-in permission in AD, retried connection
+Outcome: Resolved; user connected successfully.
+
+Session ID: VPN-002
+Tool: Windows RRAS
+Issue: DNS resolution for internal hosts failed over VPN
+Action: Configured RRAS to assign internal DNS (192.168.10.10) to VPN clients; flushed client DNS
+Outcome: Internal name resolution restored.
