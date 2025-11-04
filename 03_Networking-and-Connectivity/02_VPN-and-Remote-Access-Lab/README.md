@@ -106,6 +106,13 @@ I resolved it by configuring RRAS to assign the correct internal DNS (192.168.10
 
 ---
 
+## Documentation & Logs
+
+All troubleshooting steps and results were documented in the /logs directory. The folder includes a support session note for each simulated issue, along with command output logs (VPN status, IP configuration, and connectivity tests).  
+
+This provides a clear, traceable record of the `issue → diagnosis → fix workflow.`
+
+
 ## Conclusion
 
 This lab strengthened my ability to support remote workers and diagnose real-world VPN connectivity issues. I gained hands-on experience in configuring secure access, validating internal connectivity, analyzing authentication failures, and documenting support resolutions clearly. These skills directly apply to service desk and system administration positions where secure remote access and troubleshooting are everyday responsibilities.
