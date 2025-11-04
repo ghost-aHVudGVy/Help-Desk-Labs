@@ -1,0 +1,91 @@
+=== VPN Status ===
+
+
+EapConfigXmlStream             : #document
+VpnConfigurationXml            : #document
+IPSecCustomPolicy              : 
+MachineCertificateIssuerFilter : 
+MachineCertificateEKUFilter    : 
+ConnectionStatus               : Connected
+DnsSuffix                      : 
+Guid                           : {73FC3BF3-9C34-4096-8E36-410D0DF3914B}
+IdleDisconnectSeconds          : 0
+IsAutoTriggerEnabled           : False
+Name                           : LabVPN
+ProfileType                    : Inbox
+ProvisioningAuthority          : 
+Proxy                          : 
+RememberCredential             : True
+Routes                         : {}
+ServerAddress                  : 192.168.10.10
+ServerList                     : {}
+SplitTunneling                 : False
+VpnTrigger                     : VpnConnectionTrigger
+AllUserConnection              : True
+AuthenticationMethod           : {Eap}
+EncryptionLevel                : Optional
+L2tpIPsecAuth                  : Certificate
+NapState                       : NotNapCapable
+TunnelType                     : Automatic
+UseWinlogonCredential          : False
+PSComputerName                 : 
+CimClass                       : root/Microsoft/Windows/RemoteAccess/Client:VpnConnection
+CimInstanceProperties          : {ConnectionStatus, DnsSuffix, Guid, IdleDisconnectSeconds...}
+CimSystemProperties            : Microsoft.Management.Infrastructure.CimSystemProperties
+
+
+
+=== IPConfig After VPN ===
+
+Windows IP Configuration
+
+   Host Name . . . . . . . . . . . . : Client01
+   Primary Dns Suffix  . . . . . . . : corp.local
+   Node Type . . . . . . . . . . . . : Hybrid
+   IP Routing Enabled. . . . . . . . : No
+   WINS Proxy Enabled. . . . . . . . : No
+   DNS Suffix Search List. . . . . . : corp.local
+
+Ethernet adapter Internal LabNet:
+
+   Connection-specific DNS Suffix  . : corp.local
+   Description . . . . . . . . . . . : Intel(R) PRO/1000 MT Desktop Adapter
+   Physical Address. . . . . . . . . : 08-00-27-E1-21-9F
+   DHCP Enabled. . . . . . . . . . . : Yes
+   Autoconfiguration Enabled . . . . : Yes
+   Link-local IPv6 Address . . . . . : fe80::3cec:c7f1:a12c:bf45%4(Preferred) 
+   IPv4 Address. . . . . . . . . . . : 192.168.10.100(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Lease Obtained. . . . . . . . . . : Saturday, September 28, 1889 12:43:01 AM
+   Lease Expires . . . . . . . . . . : Tuesday, November 4, 2025 3:11:15 AM
+   Default Gateway . . . . . . . . . : 192.168.10.10
+   DHCP Server . . . . . . . . . . . : 192.168.10.10
+   DHCPv6 IAID . . . . . . . . . . . : 101187623
+   DHCPv6 Client DUID. . . . . . . . : 00-01-00-01-30-94-07-C3-08-00-27-E1-21-9F
+   DNS Servers . . . . . . . . . . . : 192.168.10.10
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+
+PPP adapter LabVPN:
+
+   Connection-specific DNS Suffix  . : corp.local
+   Description . . . . . . . . . . . : LabVPN
+   Physical Address. . . . . . . . . : 
+   DHCP Enabled. . . . . . . . . . . : No
+   Autoconfiguration Enabled . . . . : Yes
+   IPv4 Address. . . . . . . . . . . : 192.168.10.109(Preferred) 
+   Subnet Mask . . . . . . . . . . . : 255.255.255.255
+   Default Gateway . . . . . . . . . : 0.0.0.0
+   DNS Servers . . . . . . . . . . . : 192.168.10.10
+   NetBIOS over Tcpip. . . . . . . . : Enabled
+=== Ping DC01 via VPN ===
+
+Pinging 192.168.10.10 with 32 bytes of data:
+Reply from 192.168.10.10: bytes=32 time<1ms TTL=128
+Reply from 192.168.10.10: bytes=32 time<1ms TTL=128
+Reply from 192.168.10.10: bytes=32 time<1ms TTL=128
+Reply from 192.168.10.10: bytes=32 time<1ms TTL=128
+
+Ping statistics for 192.168.10.10:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 0ms, Maximum = 0ms, Average = 0ms
