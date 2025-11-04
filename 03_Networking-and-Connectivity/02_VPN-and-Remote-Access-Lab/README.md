@@ -42,7 +42,6 @@ During configuration, I selected **VPN access** and ensured that client IP assig
 I confirmed that the test user account had **Dial-in permissions** enabled in Active Directory.  
 This step is a common cause of *Error 691* authentication failures.
 
-**Screenshot:**
 [Allowing-Dial-in-To-Users](./screenshots/05_Allowing-Dial-in-To-Users.png)
 
 ### Firewall Considerations  
@@ -55,7 +54,6 @@ To allow VPN traffic to reach the server, I ensured that PPTP (TCP/1723) and GRE
 On the Windows client, I added a new VPN profile using Windows’ built-in VPN tool.  
 I pointed the configuration to the server’s internal IP address and selected username/password authentication.
 
-**Screenshot:**
 [VPN-Client-Configuration](./screenshots/06_VPN-Client-Configuration.png)
 
 ---
@@ -71,8 +69,6 @@ Once connected, I verified that:
 
 If any test failed, I logged the result for diagnosis.
 
-**Screenshot (successful connection):**
-
 [Successful-VPN-Connection](./screenshots/09_Successful-VPN-Connection.png)
 
 ---
@@ -86,7 +82,6 @@ To make the lab realistic, I intentionally introduced failure conditions.
 I attempted to connect with an incorrect password.  
 The VPN client displayed an authentication error, and on the server side, logs helped confirm the root cause.
 
-**Screenshots:**
 - [VPN-Connect-Failure](./screenshots/07_VPN-Connect-Failure.png)
 - [VPN-Auth-log](./screenshots/08_VPN-Auth-log.png)
 
