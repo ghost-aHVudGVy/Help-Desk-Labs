@@ -1,0 +1,8 @@
+Session ID: RDP-001
+Tool: Remote Desktop
+Date: 2025-11-03
+Technician: A.K.
+Client: Client01
+Issue: Group Policy not updating
+Action Taken: Forced GPUpdate and restarted Windows Update service
+Outcome: Resolved successfully
