@@ -1,22 +1,22 @@
 # Ticketing-System-Simulation-Lab
 
-This project demonstrates how I planned, built, and worked with an IT service desk environment using **Jira Service Management** and a Windows domain lab. The goal of the lab was to simulate a realistic help desk workflow — from receiving support requests, to troubleshooting, documenting the fix, and closing out tickets following standard practices.
+This project demonstrates how I planned, built, and worked with an IT service desk environment using **Jira Service Management** and a Windows domain lab. The goal of the lab was to simulate a realistic help desk workflow, from receiving support requests, to troubleshooting, documenting the fix, and closing out tickets following standard practices.
 
 This lab gave me hands-on experience with ticket triage, communication, workflow management, root-cause analysis, and system administration tasks across Active Directory, printers, networking, and user applications.
 
 ---
 
-## Overview of the Lab Environment
+## Overview
 
-I built a small corporate-style environment to support the ticket scenarios:
+By the start of this lab, the following environment was already set up and running:
 
-- **Domain:** `corp.local`
-- **Domain Controller:** `DC01` (Active Directory, DNS, DHCP)
-- **Client Workstation:** `Client01`
-- **Shared Network Printer:** `\\DC01\Office_Printer`
-- **User Accounts & Group Policies** configured for standard office use
+| Component | Hostname | Role | IP Address | Description |
+|------------|-----------|------|-------------|--------------|
+| **DC01** | `DC01` | Domain Controller | 192.168.10.10 | Active Directory Domain Services, DNS, DHCP |
+| **Client01** | `Client01` | Workstation | DHCP | Domain-joined Windows 10 client |
+| **Internal Network** | `LabNet` | Virtual Network | 192.168.10.0/24 | Isolated internal network used for domain communication |
 
-This environment provided a realistic foundation for testing and resolving user support issues.
+This setup replicates a small corporate environment, with both machines connected through an isolated internal network to simulate a real enterprise domain.
 
 ---
 
@@ -26,9 +26,6 @@ I created a dedicated Service Management project to manage IT support requests. 
 
 - **Request forms** to capture all relevant user information
 - **Queues** for organizing incoming tickets
-- **Workflows** to match real support lifecycles:
-  - New → In Progress → Waiting for User → Resolved → Closed
-- **Comment templates** for common support responses (e.g., password resets, VPN troubleshooting)
 - **SLA targets** based on priority to simulate response expectations
 
 This allowed the project to function similarly to a real help desk ticketing system used in professional environments.
@@ -55,7 +52,7 @@ The support cases covered:
 9. Network drive mapping failure due to permissions
 10. File access privilege change request
 
-For each case, I reproduced the issue, applied relevant troubleshooting steps, and confirmed the fix with follow-up testing. The resolutions ranged from account and permission changes to network diagnostics, service troubleshooting, log analysis, and user communication.
+For each case, I reproduced the issue, applied relevant troubleshooting steps, and confirmed the fix with follow-up testing. The resolutions ranged from account and permission changes to network diagnostics, service troubleshooting, log analysis, and user communication. I have documented the whole process from start to finish for each of these tickets.
 
 ---
 
@@ -79,23 +76,11 @@ This project reinforced how important it is to stay methodical:
 - Test assumptions one step at a time
 - Document the reasoning behind the fix, not just the fix itself
 
-It also improved my ability to explain technical issues in a clear and professional way — something that makes support work smoother for both users and teams.
-
----
-
-## Repository Contents
-
-This repository includes:
-- Screenshots demonstrating the Jira setup, workflows, and ticket resolution stages
-- Troubleshooting notes and resolution documentation
-
-No confidential or proprietary data is included.
+It also improved my ability to explain technical issues in a clear and professional way.
 
 ---
 
 ## Final Thoughts
 
-This lab reflects the real responsibilities of an IT Support / Service Desk role. It shows my ability to manage tickets professionally, troubleshoot efficiently, and communicate clearly — all while working within structured processes.
-
-If you'd like to discuss the project, feel free to reach out.
+This lab reflects the real responsibilities of an IT Support / Service Desk role. It shows my ability to manage tickets professionally, troubleshoot efficiently, and communicate clearly.
 
