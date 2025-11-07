@@ -42,10 +42,10 @@ I created and resolved a set of common workplace IT support tickets. Each ticket
 The support cases covered:
 
 1. [Password reset and account unlock](./01_Password-Reset-Request)
-2. Network printer not responding
-3. Domain join failure on a workstation
-4. File access privilege change request
-5. User Account Locked Out
+2. [Network printer not responding](./02_Printer-Offline)
+3. [Domain join failure on a workstation](./03_Domain-Join-Failure)
+4. [File access privilege change request](./04_Permission-Change-Request)
+5. [User Account Locked Out](./05_User-Account-Locked-Out)
 
 For each case, I reproduced the issue, applied relevant troubleshooting steps, and confirmed the fix with follow-up testing. The resolutions ranged from account and permission changes to network diagnostics, service troubleshooting, log analysis, and user communication. I have documented the whole process from start to finish for each of these tickets.
 
