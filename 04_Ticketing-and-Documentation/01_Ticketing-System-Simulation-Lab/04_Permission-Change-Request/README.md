@@ -31,6 +31,7 @@ The user was granted access by being added to the **Finance_RW** security group,
 After permissions were updated, the user mapped the shared folder as a network drive and confirmed that files could be opened, modified, and saved successfully.
 
 [Mapping-Drive](./05_Mapping-Drive.png)  
+
 [Drive-Mapped](./06_Drive-Mapped.png)
 
 ---
