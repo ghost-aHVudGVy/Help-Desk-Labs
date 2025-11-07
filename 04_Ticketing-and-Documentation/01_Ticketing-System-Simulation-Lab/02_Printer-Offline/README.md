@@ -19,7 +19,7 @@ A user reported that the shared office printer **\\DC01\Office_Printer** was sho
 The issue was first verified at the user’s workstation. The printer was present, but the print spooler service was not functioning correctly.  
 The **Print Spooler** service was restarted through **Services.msc**, restoring communication between the workstation and the print system.
 
-[Restarting-Print-Queue](./screenshots/02_Restarting-Print-Queue.png)
+[Restarting-Print-Spooler](./screenshots/02_Restarting-Print-Spooler.png)
 
 Next, the offline printer was removed from **Devices and Printers**, and then reconnected using the shared path:
 
