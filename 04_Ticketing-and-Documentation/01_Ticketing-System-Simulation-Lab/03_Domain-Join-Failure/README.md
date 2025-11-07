@@ -16,7 +16,7 @@ This prevented the system from being registered in Active Directory and assigned
 **Impact:** The workstation could not be deployed for use.  
 **Priority:** High
 
-![Domain Join Failure Ticket](./screenshots/01_Domain-Join-Failure-Ticket.png)
+[Domain Join Failure Ticket](./screenshots/01_Domain-Join-Failure-Ticket.png)
 
 ---
 
@@ -26,7 +26,7 @@ I began by verifying network connectivity, which was functioning correctly. Howe
 
 To resolve this, the preferred DNS server on the workstation was updated to point to the domain controller at **192.168.10.10**.
 
-![DNS Configuration](./screenshots/02_DNS-Config.png)
+[DNS Configuration](./screenshots/02_DNS-Config.png)
 
 After updating DNS, the workstation was reattempted to be joined to the domain through the system settings:
 
@@ -34,7 +34,7 @@ After updating DNS, the workstation was reattempted to be joined to the domain t
 
 The domain join request completed successfully.
 
-![Successful Domain Join](./screenshots/03_Domain-Join.png)
+[Successful Domain Join](./screenshots/03_Domain-Join.png)
 
 The workstation was then rebooted, and the computer object was confirmed to be visible in **Active Directory Users and Computers**.
 
