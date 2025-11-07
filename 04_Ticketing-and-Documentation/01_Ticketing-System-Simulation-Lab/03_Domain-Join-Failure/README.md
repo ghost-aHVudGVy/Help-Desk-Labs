@@ -1,4 +1,4 @@
-# Ticket #4 — Domain Join Failure
+# Ticket #3 — Domain Join Failure
 
 ## Issue Summary
 
