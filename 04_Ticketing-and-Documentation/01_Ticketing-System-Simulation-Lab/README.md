@@ -41,7 +41,7 @@ I created and resolved a set of common workplace IT support tickets. Each ticket
 
 The support cases covered:
 
-1. Password reset and account unlock
+1. [Password reset and account unlock](./01_Password-Reset-Request)
 2. Network printer not responding
 3. Domain join failure on a workstation
 4. File access privilege change request
