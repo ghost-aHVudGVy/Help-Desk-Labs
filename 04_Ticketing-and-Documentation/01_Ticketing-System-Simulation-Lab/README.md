@@ -1,8 +1,8 @@
 # Ticketing-System-Simulation-Lab
 
-This project demonstrates how I planned, built, and worked with an IT service desk environment using **Jira Service Management** and a Windows domain lab. The goal of the lab was to simulate a realistic help desk workflow, from receiving support requests, to troubleshooting, documenting the fix, and closing out tickets following standard practices.
+This project demonstrates how I planned, built, and worked with an IT service desk environment using **Jira Service Management** and a Windows domain lab. 
 
-This lab gave me hands-on experience with ticket triage, communication, workflow management, root-cause analysis, and system administration tasks across Active Directory, printers, networking, and user applications.
+The goal of the lab was to simulate a realistic help desk workflow, from receiving support requests, to troubleshooting, documenting the fix, and closing out tickets following standard practices.
 
 ---
 
@@ -58,7 +58,6 @@ For each case, I reproduced the issue, applied relevant troubleshooting steps, a
 - Active Directory user and policy administration
 - Printer and network resource configuration
 - Basic networking and DNS troubleshooting
-- Application support (Outlook, VPN, Windows services)
 - Root-cause analysis based on logs and system behavior
 
 ---
