@@ -43,14 +43,9 @@ The support cases covered:
 
 1. Password reset and account unlock
 2. Network printer not responding
-3. Outlook not syncing mail
-4. Domain join failure on a workstation
-5. VPN authentication errors
-6. Slow network performance investigation
-7. Post-update blue screen (BSOD) diagnosis
-8. Software installation request with approval handling
-9. Network drive mapping failure due to permissions
-10. File access privilege change request
+3. Domain join failure on a workstation
+4. File access privilege change request
+5. User Account Locked Out
 
 For each case, I reproduced the issue, applied relevant troubleshooting steps, and confirmed the fix with follow-up testing. The resolutions ranged from account and permission changes to network diagnostics, service troubleshooting, log analysis, and user communication. I have documented the whole process from start to finish for each of these tickets.
 
