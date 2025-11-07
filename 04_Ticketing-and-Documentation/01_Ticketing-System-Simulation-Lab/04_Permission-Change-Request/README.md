@@ -21,7 +21,8 @@ The request was first reviewed to confirm business justification and managerial 
 
 On **DC01**, the **Finance** shared folder was opened and its sharing and NTFS permissions were reviewed to ensure consistent security configuration.
 
-[Enable-Share.png](./02_Enable-Share.png)  
+[Enable-Share.png](./02_Enable-Share.png) 
+
 [Set-Shared-Permision](./03_Set-Shared-Permision.png)
 
 The user was granted access by being added to the **Finance_RW** security group, which is designated for users requiring read/write privileges on the Finance share.
