@@ -33,7 +33,10 @@ This article provides **detailed instructions** for connecting to a **shared net
 ## Mapping a Network Drive via Command Prompt (Optional)
 
 For **advanced users** or **automation purposes**, you can map a **drive** using the **command prompt**:
-- Replace `Z:` with your desired **drive letter**.  
+```cmd
+net use Z: \\ServerName\SharedFolder /persistent:yes
+```
+- Replace `Z:` with your desired **drive letter**.
 
 - Replace `\\ServerName\SharedFolder` with the actual **network path**.  
 
