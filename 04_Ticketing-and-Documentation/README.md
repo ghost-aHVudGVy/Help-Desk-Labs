@@ -26,8 +26,6 @@ I configured a dedicated **Jira Service Management** project to manage IT suppor
 - Created **queues** to organize incoming tickets efficiently.
 - Defined **SLA targets** to simulate realistic response and resolution expectations.
 
-This approach mirrors professional IT support workflows, ensuring tickets are handled systematically from submission to resolution.
-
 ---
 
 ## Tickets Worked & Troubleshooting
