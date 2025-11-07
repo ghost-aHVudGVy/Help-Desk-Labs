@@ -3,7 +3,7 @@
 **Category:** User Account Management  
 **Audience:** All employees  
 **Last Updated:** 2025-11-07  
-**Author:** [Your Name]
+**Author:** Antonio Karadenizov
 
 ---
 
