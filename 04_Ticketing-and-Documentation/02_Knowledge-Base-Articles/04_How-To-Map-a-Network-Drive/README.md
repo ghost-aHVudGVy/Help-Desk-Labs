@@ -65,7 +65,3 @@ net use Z: \\ServerName\SharedFolder /persistent:yes
 ---
 
 **End of Article**
-
-
-```cmd
-net use Z: \\ServerName\SharedFolder /persistent:yes
