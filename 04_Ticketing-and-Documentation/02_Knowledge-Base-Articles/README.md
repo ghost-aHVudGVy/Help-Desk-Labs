@@ -44,9 +44,3 @@ I wrote 3–5 KB articles covering frequent IT support requests. Each article in
 - 3–5 fully written KB articles in Markdown format.
 - Step-by-step instructions, screenshots, and troubleshooting notes included for each topic.
 - Ready to integrate into a company intranet or internal IT portal.
-
----
-
-**Next Steps:**  
-These KB articles are part of a larger Help Desk lab project, which together demonstrates end-to-end IT support workflows — from onboarding users and managing devices to troubleshooting issues and documenting solutions.
-
