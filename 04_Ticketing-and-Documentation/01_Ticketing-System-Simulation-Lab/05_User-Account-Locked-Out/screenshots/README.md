@@ -28,7 +28,7 @@ I accessed **Active Directory Users and Computers** on **DC01** to investigate t
 
 The account was unlocked through the **Account** tab in the user’s properties panel.
 
-![Unlocking-The-Account](./03_Unlocking-The-Account.png)
+[Unlocking-The-Account](./03_Unlocking-The-Account.png)
 
 Since the user had recently changed their password, I checked for cached or saved credentials. On the user’s workstation, **Credential Manager** was opened and any stored credentials related to VPN, Wi-Fi, Outlook, or other network authentication services were removed to prevent repeated lockouts from outdated passwords being used automatically.
 
