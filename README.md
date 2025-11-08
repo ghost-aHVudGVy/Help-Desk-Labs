@@ -17,7 +17,7 @@ Each lab simulates **real-world corporate IT scenarios**, emphasizing best pract
 
 ---
 
-### 1.Virtual IT Environment Setup (Active Directory Lab)
+### 1. Virtual IT Environment Setup (Active Directory Lab)
 
 This lab focused on building a fully functioning Windows domain environment from the ground up. The goal was to simulate a small company network and establish the core infrastructure used for identity management, workstation access, and administrative control.
 
@@ -47,7 +47,7 @@ This setup provided the foundation for all following labs, forming a controlled 
 
 ---
 
-### 2.Active Directory User Account Management Lab
+### 2. Active Directory User Account Management Lab
 
 In this lab, I focused on practical user management in Active Directory, simulating real Help Desk tasks.
 
@@ -67,7 +67,7 @@ In this lab, I focused on practical user management in Active Directory, simulat
 
 ---
 
-### 3.Group Policy Management Lab
+### 3. Group Policy Management Lab
 
 In this lab, I focused on creating, linking, and applying Group Policies in a Windows domain environment to enforce security and standardize user settings.
 
@@ -87,7 +87,7 @@ In this lab, I focused on creating, linking, and applying Group Policies in a Wi
 
 ---
 
-### 4.File Permissions & Network Share Management Lab
+### 4. File Permissions & Network Share Management Lab
 
 In this lab, I focused on configuring file shares and managing access permissions in a Windows domain environment.
 
@@ -108,7 +108,7 @@ In this lab, I focused on configuring file shares and managing access permission
 
 ---
 
-### 5.Print Server Deployment & Group Policy Lab
+### 5. Print Server Deployment & Group Policy Lab
 
 In this lab, I configured a Windows Print Server and deployed a virtual printer to client machines using Group Policy, simulating a real enterprise setup.
 
@@ -130,7 +130,7 @@ In this lab, I configured a Windows Print Server and deployed a virtual printer 
 
 ---
 
-### 6.Remote Access & Support Tools Lab
+### 6. Remote Access & Support Tools Lab
 
 In this lab, I focused on configuring and testing remote access tools to manage domain computers and simulate IT support scenarios.
 
@@ -150,7 +150,7 @@ In this lab, I focused on configuring and testing remote access tools to manage 
 
 ---
 
-### 7.Network Diagnostics & Troubleshooting Lab
+### 7. Network Diagnostics & Troubleshooting Lab
 
 In this lab, I focused on diagnosing and resolving network connectivity issues within a Windows domain environment.
 
@@ -172,7 +172,7 @@ In this lab, I focused on diagnosing and resolving network connectivity issues w
 
 ---
 
-### 8.VPN Configuration & Connectivity Troubleshooting Lab
+### 8. VPN Configuration & Connectivity Troubleshooting Lab
 
 In this lab, I configured VPN access and practiced troubleshooting common user connection issues within a Windows domain environment.
 
@@ -194,7 +194,7 @@ In this lab, I configured VPN access and practiced troubleshooting common user c
 
 ---
 
-### 9.Ticketing System Simulation Lab
+### 9. Ticketing System Simulation Lab
 
 In this lab, I simulated a real IT service desk workflow using Jira Service Management within a Windows domain environment.
 
@@ -215,7 +215,7 @@ In this lab, I simulated a real IT service desk workflow using Jira Service Mana
 
 ---
 
-### 10.Knowledge Base (KB) Documentation Lab
+### 10. Knowledge Base (KB) Documentation Lab
 
 In this lab, I created practical Knowledge Base articles to support end-users and streamline IT support processes.
 
@@ -240,7 +240,7 @@ In this lab, I created practical Knowledge Base articles to support end-users an
 
 ---
 
-### 11.End-to-End Help Desk Onboarding Simulation Lab
+### 11. End-to-End Help Desk Onboarding Simulation Lab
 
 In this capstone lab, I simulated the full IT onboarding workflow for a new employee in a Windows domain environment.
 
