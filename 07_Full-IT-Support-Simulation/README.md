@@ -1,81 +1,124 @@
-# End-to-End Help Desk Simulation
+# End-to-End Help Desk Onboarding Simulation
 
-This lab simulates the complete workflow of onboarding a new employee in a Windows domain environment. The goal was to walk through the same steps an IT Support specialist would perform in a real workplace, from account provisioning, workstation configuration, resource access, application setup, troubleshooting, to documentation.
+This lab project simulates the full onboarding workflow for a new employee in a Windows domain environment. The purpose was to demonstrate the technical and procedural steps involved in provisioning user accounts, applying appropriate permissions, configuring workstations, and documenting the process within a ticketing system—just as it would be handled in a real Help Desk or IT Support role.
+
+The focus throughout this lab was not only on getting things to work, but also on ensuring that each step was implemented cleanly, logically, and with least-privilege security in mind.
+
+---
+
+## Overview
+
+By the start of this lab, the following environment was already set up and running:
+
+| Component | Hostname | Role | IP Address | Description |
+|------------|-----------|------|-------------|--------------|
+| **DC01** | `DC01` | Domain Controller | 192.168.10.10 | Active Directory Domain Services, DNS, DHCP |
+| **Client01** | `Client01` | Workstation | DHCP | Domain-joined Windows 10 client |
+| **Internal Network** | `LabNet` | Virtual Network | 192.168.10.0/24 | Isolated internal network used for domain communication |
+
+This setup replicates a small corporate environment, with both machines connected through an isolated internal network to simulate a real enterprise domain.
 
 ---
 
 ## Scenario
 
-A new employee joined the organization and required full IT setup:
+A new employee joined the company and required full IT onboarding.  
+I completed the setup as follows:
 
-- A domain and Microsoft 365 user account
-- Workstation configuration and login access
-- Access to shared folders and required permissions
-- Standard software installation
-- Connection to printers and network resources
-
-I worked through this request from start to finish, documenting every step in the ticketing system as if this were an actual onboarding request.
-
----
-
-## What I Did
-
-### 1. Account Provisioning
-I created the new user in **Active Directory**, assigned them to the correct **security groups**, and synchronized their account to **Microsoft 365**. Once the account appeared in the cloud, I configured licensing and verified mailbox availability.
-
-### 2. Workstation Setup
-I prepared a domain-joined workstation for the employee, confirmed Group Policy settings applied correctly, and signed in using the new credentials to validate login and profile setup.
-
-### 3. Access to Network & Shared Resources
-I assigned the user the appropriate file share permissions and mapped shared network drives. I confirmed that access aligned to least-privilege principles while still supporting the user’s role.
-
-### 4. Application Setup
-Using Group Policy and manual installation where needed, I installed the software required for the employee’s department. I verified application launch, license activation where applicable, and sign-in functionality.
-
-### 5. Troubleshooting a Support Issue
-To simulate real-world support follow-through, I resolved a user-level issue—in this case, a network printer connection failure.  
-I tested printer spool services, verified network reachability, re-added the device, and printed a test page to confirm everything was functioning correctly.
-
-### 6. Documentation and Ticket Closure
-Throughout the process, I maintained a structured and concise record in the ticket:
-
-- What was requested
-- Steps taken
-- Configuration changes
-- Testing performed
-- Final confirmation with the user
-
-This ensured the ticket history demonstrated both technical accuracy and clear communication.
+1. Created a new user account in **Active Directory**
+2. Configured the account and assigned group memberships
+3. Created a new **Security Group (IT_Staff)** and added the user
+4. Applied folder and printer access automatically using **Group Policy Objects (GPOs)** tied to that security group
+5. Logged in as the new user to verify access to shared resources and printing
+6. Documented the full workflow inside the ticketing system
 
 ---
 
-## Key Skills Demonstrated
+## Step-by-Step Process
 
-- Active Directory and Microsoft 365 administration
-- Workstation configuration and Group Policy troubleshooting
-- Network access and resource permission management
-- Standard software deployment practices
-- Systematic troubleshooting and verification
-- Professional support documentation and user communication
+### 1. Created the User Account in Active Directory
+
+I created the new user account in **Active Directory Users and Computers**, assigned an initial password, and prepared the account for first login.
+
+[Creating the account](./screenshots/01_Creating_The_Account.png)
+
+[Setting the password](./screenshots/02_Setting_The_Password.png)
 
 ---
 
-## What I Learned
+### 2. Created and Assigned Security Group Membership
 
-This simulation reinforced the importance of a **methodical approach** when supporting users:
+I created the **IT_Staff** security group to represent users who require access to departmental shared drive space and printers.  
+The new user was added to this group.
 
-- Set up accounts and permissions carefully to avoid downstream issues
-- Test each step as you go—don’t assume it works until proven
-- Communicate clearly, both with users and in the documentation
-- Treat every action as part of a larger workflow, not an isolated task
+[Creating the security group](./screenshots/03_Creating-Security-Group.png)
 
-Working through the process end-to-end highlighted how onboarding is both technical and procedural, requiring accuracy, patience, and consistency.
+[Adding the user to the group](./screenshots/04_Added-The-User-To-The-Group.png)
+
+---
+
+### 3. Configured Shared Folder Permissions
+
+I configured permissions at both the **share** and **NTFS** levels to ensure proper access control.  
+Members of *IT_Staff* were granted appropriate read/write permissions.
+
+[Granting share permissions](./screenshots/05_Granting-Shared=Permissions.png)
+
+[Granting NTFS permissions](./screenshots/06_Granting-NTFS-Permissions.png)
+
+---
+
+### 4. Logged In as the New User and Verified Access
+
+I logged into the workstation as the new user to confirm profile creation, authentication, and baseline access.
+
+[Logging in as the new user](./screenshots/07_Logging-With-The-New-User.png)
+
+---
+
+### 5. Automated Drive Mapping via Group Policy
+
+To avoid manual mapping and to ensure consistent access across machines, I created a **GPO** that automatically maps the departmental shared drive whenever a user in the **IT_Staff** group logs in.
+
+[Created GPO for automatic drive mapping](./screenshots/08_Creted-GPO-For-Automatic-Drive-Mapping.png)
+
+[Configuring drive mapping in GPO](./screenshots/09_Creating-GPO-Mapping-Drive.png)
+
+[Forcing policy update](./screenshots/10_Updating-The-Policies.png)
+
+[Drive successfully mapped](./screenshots/11_Shared-Drive-Aveable.png)
+
+---
+
+### 6. Configured Office Printer Access via GPO
+
+I added the office printer and deployed it via GPO so that users in the **IT_Staff** group automatically receive the printer connection when they log in.
+
+[Adding printer via GPO](./screenshots/12_Adding-The-Office-Printer-Through-GPO.png)
+
+[Printer successfully installed](./screenshots/13_Office-Printer-Added-Through-GPO.png)
+
+---
+
+## What This Demonstrates
+
+This lab demonstrates the ability to:
+
+- Manage users and security groups in **Active Directory**
+- Apply **least privilege access control** using share and NTFS permissions
+- Use **Group Policy Objects** to automate workstation configuration and user experience
+- Verify successful configuration from the end-user perspective
+- Maintain consistent internal documentation and ticket history
+
+These are core responsibilities of real-world IT Support and Help Desk roles.
 
 ---
 
 ## Summary
 
-This project captures the real responsibilities of an IT Support professional—provisioning users, preparing systems, enabling access, resolving issues, and documenting thoroughly.  
-It demonstrates the ability to manage technical tasks while maintaining a professional and organized workflow that aligns with real help desk standards.
+This onboarding simulation reflects a complete support workflow from account provisioning to workstation readiness. The project emphasizes both technical accuracy and structured documentation—skills that are essential in professional support environments.
 
+The result:  
+A new user can sign in, access the correct shared files, and print to the appropriate office printer—without manual setup on each workstation.
 
+---
