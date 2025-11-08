@@ -1,8 +1,6 @@
 # End-to-End Help Desk Onboarding Simulation
 
-This lab project simulates the full onboarding workflow for a new employee in a Windows domain environment. The purpose was to demonstrate the technical and procedural steps involved in provisioning user accounts, applying appropriate permissions, configuring workstations, and documenting the process within a ticketing system—just as it would be handled in a real Help Desk or IT Support role.
-
-The focus throughout this lab was not only on getting things to work, but also on ensuring that each step was implemented cleanly, logically, and with least-privilege security in mind.
+This lab project simulates the full onboarding workflow for a new employee in a Windows domain environment.
 
 ---
 
@@ -26,7 +24,7 @@ A new employee joined the company and required full IT onboarding.
 I completed the setup as follows:
 
 1. Created a new user account in **Active Directory**
-2. Configured the account and assigned group memberships
+2. Configured the account
 3. Created a new **Security Group (IT_Staff)** and added the user
 4. Applied folder and printer access automatically using **Group Policy Objects (GPOs)** tied to that security group
 5. Logged in as the new user to verify access to shared resources and printing
@@ -110,15 +108,11 @@ This lab demonstrates the ability to:
 - Verify successful configuration from the end-user perspective
 - Maintain consistent internal documentation and ticket history
 
-These are core responsibilities of real-world IT Support and Help Desk roles.
-
 ---
 
 ## Summary
 
-This onboarding simulation reflects a complete support workflow from account provisioning to workstation readiness. The project emphasizes both technical accuracy and structured documentation—skills that are essential in professional support environments.
+This onboarding simulation reflects a complete support workflow from account provisioning to workstation readiness.
 
 The result:  
 A new user can sign in, access the correct shared files, and print to the appropriate office printer—without manual setup on each workstation.
-
----
